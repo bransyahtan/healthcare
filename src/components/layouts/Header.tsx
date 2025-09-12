@@ -35,7 +35,11 @@ const Header = () => {
           <NavItems items={navItems} onItemClick={() => setIsOpen(false)} />
 
           <div className="ml-auto hidden items-center gap-2 lg:flex">
-            <NavbarButton href="/masuk" variant="primary">
+            <NavbarButton
+              href="/masuk"
+              variant="primary"
+              className="bg-primarygreen text-white"
+            >
               Masuk
             </NavbarButton>
           </div>
