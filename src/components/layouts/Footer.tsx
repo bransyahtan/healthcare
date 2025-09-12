@@ -1,14 +1,24 @@
 "use client";
 
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Music2,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 
 const currentYear = new Date().getFullYear();
 
-const footerLinks = [
-  { label: "Tentang", href: "/tentang" },
-  { label: "Kontak", href: "/kontak" },
-  { label: "Kebijakan Privasi", href: "/kebijakan-privasi" },
-  { label: "Syarat & Ketentuan", href: "/syarat-ketentuan" },
+const socialLinks = [
+  { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
+  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://youtube.com", icon: Youtube, label: "YouTube" },
+  { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
+  { href: "https://twitter.com", icon: Twitter, label: "Twitter" },
+  { href: "https://tiktok.com", icon: Music2, label: "TikTok" },
 ];
 
 export default function Footer() {
@@ -21,17 +31,20 @@ export default function Footer() {
             <span className="text-lg font-semibold">Healthcare</span>
           </div>
 
-          <nav className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-neutral-600 dark:text-neutral-300">
-            {footerLinks.map((item) => (
+          <div className="flex items-center gap-3">
+            {socialLinks.map(({ href, icon: Icon, label }) => (
               <Link
-                key={item.href}
-                href={item.href}
-                className="hover:text-primarygreen"
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-300 text-neutral-600 transition-colors hover:bg-primarygreen hover:text-white dark:border-neutral-700 dark:text-neutral-300"
               >
-                {item.label}
+                <Icon className="h-5 w-5" />
               </Link>
             ))}
-          </nav>
+          </div>
         </div>
 
         <div className="mt-6 border-t pt-6 text-xs text-neutral-500 dark:text-neutral-400">
