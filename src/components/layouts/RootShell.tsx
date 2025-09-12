@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Footer from "./Footer";
 import Header from "./Header";
 
 export function RootShell({ children }: { children: React.ReactNode }) {
@@ -15,7 +16,7 @@ export function RootShell({ children }: { children: React.ReactNode }) {
     <>
       <Header />
       <main className="min-h-[90vh]">{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
