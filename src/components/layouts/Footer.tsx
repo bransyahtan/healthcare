@@ -8,6 +8,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const currentYear = new Date().getFullYear();
@@ -27,8 +28,10 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded bg-primarygreen" />
-            <span className="text-lg font-semibold">Healthcare</span>
+            <Image src="/images/logo.png" alt="logo" width={60} height={60} />
+            <span className="text-lg font-semibold text-primarygreen">
+              Healthcare
+            </span>
           </div>
 
           <div className="flex items-center gap-3">
