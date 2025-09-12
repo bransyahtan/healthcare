@@ -36,7 +36,7 @@ const Header = () => {
 
           <div className="ml-auto hidden items-center gap-2 lg:flex">
             <NavbarButton
-              href="/masuk"
+              href="/login"
               variant="primary"
               className="bg-primarygreen text-white"
             >
