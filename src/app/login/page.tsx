@@ -4,6 +4,7 @@ import doctorAnimation from "@/../public/lotties/login.json";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import { Lock, Mail } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const Login = () => {
@@ -69,12 +70,12 @@ const Login = () => {
         </motion.button>
 
         <div className="flex justify-between mt-6 text-sm text-gray-500">
-          <a href="#" className="hover:text-[#20b4ad]">
-            Forgot Password?
-          </a>
-          <a href="#" className="hover:text-[#20b4ad]">
-            Create Account
-          </a>
+          <Link href="/forgot-password" className="hover:text-[#20b4ad]">
+            Lupa Password?
+          </Link>
+          <Link href="/register" className="hover:text-[#20b4ad]">
+            Buat Akun
+          </Link>
         </div>
       </motion.div>
     </div>

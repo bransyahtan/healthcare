@@ -6,7 +6,9 @@ import Header from "./Header";
 
 export function RootShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const hideLayout = pathname === "/login" || pathname === "/register";
+  const hiddenRoutes = ["/login", "/register", "/forgot-password"];
+
+  const hideLayout = hiddenRoutes.includes(pathname);
 
   if (hideLayout) {
     return <>{children}</>;
