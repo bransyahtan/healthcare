@@ -30,7 +30,7 @@ const HeroSection = () => {
             <button className="cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-md bg-primarygreen text-white hover:opacity-90 hover:-translate-y-0.5 transition">
               Cari Dokter
             </button>
-            <button className="cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-lg bg-white text-black hover:opacity-90 hover:-translate-y-0.5 transition">
+            <button className="border border-primarygreen text-primarygreen cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-lg bg-white hover:opacity-90 hover:-translate-y-0.5 transition">
               Article
             </button>
           </motion.div>

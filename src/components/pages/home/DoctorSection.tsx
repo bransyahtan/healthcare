@@ -41,8 +41,7 @@ const DoctorSection = () => {
             href="/doctors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 rounded-full text-white font-semibold shadow"
-            style={{ backgroundColor: "#20b4ad" }}
+            className="px-6 py-3 rounded-full text-white font-semibold shadow bg-primarygreen"
           >
             Lihat Semua Dokter
           </motion.a>
