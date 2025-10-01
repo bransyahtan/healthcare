@@ -1,5 +1,6 @@
 "use client";
 
+import DoctorSection from "@/components/pages/home/DoctorSection";
 import HeroSection from "@/components/pages/home/HeroSection";
 import ServiceSection from "@/components/pages/home/ServiceSection";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <ServiceSection />
+      <DoctorSection />
     </main>
   );
 }
