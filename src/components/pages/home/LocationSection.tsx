@@ -61,5 +61,4 @@ const LocationSection = () => {
     </section>
   );
 };
-
 export default LocationSection;
