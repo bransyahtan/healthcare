@@ -21,7 +21,7 @@ const LocationSection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-gradient-to-br from-white to-green-50 p-8 rounded-3xl shadow-lg flex flex-col md:flex-row items-center gap-8"
+        className="p-8 flex flex-col md:flex-row items-center gap-8"
       >
         <div className="flex-1 space-y-4 text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-2">
