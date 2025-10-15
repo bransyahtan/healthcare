@@ -15,7 +15,6 @@ const LocationSection = () => {
       >
         Lokasi Klinik Kami
       </motion.h2>
-
       <motion.div
         initial={{ opacity: 0, scale: 0.97 }}
         whileInView={{ opacity: 1, scale: 1 }}
