@@ -34,7 +34,6 @@ const LocationSection = () => {
             Buka setiap hari pukul{" "}
             <span className="font-medium">08.00 - 21.00</span>
           </p>
-
           <motion.a
             href="https://www.google.com/maps/place/Monas/"
             target="_blank"
