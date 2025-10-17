@@ -15,7 +15,7 @@ const DoctorSection = () => {
         Dokter & Spesialis
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 bg-white p-6 rounded-2xl shadow">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 bg-white p-6 rounded-2xl">
         <div className="flex justify-center">
           <Image
             src="/images/doctor2.png"
