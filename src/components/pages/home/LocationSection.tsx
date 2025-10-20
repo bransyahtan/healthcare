@@ -11,7 +11,7 @@ const LocationSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+        className="text-3xl md:text-4xl font-bold text-gray-900 mb-10"
       >
         Lokasi Klinik Kami
       </motion.h2>

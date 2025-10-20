@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+  const router = useRouter();
   return (
     <section className="">
       <div className="responsive-container grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6">
@@ -27,10 +29,16 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <button className="cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-md bg-primarygreen text-white hover:opacity-90 hover:-translate-y-0.5 transition">
+            <button
+              onClick={() => router.push("/doctors")}
+              className="cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-md bg-primarygreen text-white hover:opacity-90 hover:-translate-y-0.5 transition"
+            >
               Cari Dokter
             </button>
-            <button className="border border-primarygreen text-primarygreen cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-lg bg-white hover:opacity-90 hover:-translate-y-0.5 transition">
+            <button
+              onClick={() => router.push("/articles")}
+              className="border border-primarygreen text-primarygreen cursor-pointer px-6 py-3 rounded-2xl font-semibold shadow-lg bg-white hover:opacity-90 hover:-translate-y-0.5 transition"
+            >
               Article
             </button>
           </motion.div>
